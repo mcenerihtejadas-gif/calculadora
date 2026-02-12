@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de propinas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Calculadora de propinas</h1>
+<div class="contenedor-principal">
+  <div class="seccion-entradas">
+    <div class="grupo-input">
+      <label for="cuenta">Cuenta</label>
+      <input type="number" id="cuenta" placeholder="0" step="0.01">
+    </div>
+
+    <div class="grupo-input">
+      <label>Seleccionar % de Propina</label>
+      <div class="cuadricula-propina">
+        <button class="btn-propina" value="5">5%</button>
+        <button class="btn-propina" value="10">10%</button>
+        <button class="btn-propina" value="15">15%</button>
+        <button class="btn-propina" value="25">25%</button>
+        <button class="btn-propina" value="50">50%</button>
+        <input type="number" id="propina-personalizada" placeholder="Otro">
+      </div>
+    </div>
+
+    <div class="grupo-input">
+      <label for="personas">Número de Personas</label>
+      <input type="number" id="personas" placeholder="0">
+    </div>
+  </div>
+
+  <div class="seccion-resultados">
+    <div class="fila-resultado">
+      <div>
+        <p class="texto-claro">Propina</p>
+        <p class="texto-secundario">/ persona</p>
+      </div>
+      <h2 id="monto-propina">$0.00</h2>
+    </div>
+
+    <div class="fila-resultado">
+      <div>
+        <p class="texto-claro">Total</p>
+        <p class="texto-secundario">/ persona</p>
+      </div>
+      <h2 id="monto-total">$0.00</h2>
+    </div>
+
+    <button id="btn-reiniciar">REINICIAR</button>
+  </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
+
